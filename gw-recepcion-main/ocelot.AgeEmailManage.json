@@ -1,0 +1,56 @@
+{
+  "Routes": [
+    //*********** Metodos de consulta, ping, inactivar ***********//
+    {
+      "DownstreamPathTemplate": "/manageemail/{path}", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "age-inbox-radicador.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/manageemail/{path}", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Post" ] //Tipo de Metodo
+    },
+    //*********** Lectura y radicación de correo ***********//
+    {
+      "DownstreamPathTemplate": "/manageemail", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "age-inbox-radicador.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/manageemail", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Post" ] //Tipo de Metodo
+    },
+    //*********** Verificar y almacenar TenantId ***********//
+    {
+      "DownstreamPathTemplate": "/Authentication/{path}", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "age-inbox-radicador.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/Authentication/{path}", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Post" ] //Tipo de Metodo
+    },
+    //*********** Comprobación de HealthCheck ***********//
+    {
+      "DownstreamPathTemplate": "/hc", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "age-inbox-radicador.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/age-inbox-radicador/hc", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Get" ] //Tipo de Metodo
+    }
+  ]
+}

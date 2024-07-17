@@ -1,0 +1,49 @@
+{
+  "profiles": {
+    "Development-VisualStudio": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development-VisualStudio"
+      },
+      "dotnetRunMessages": true
+    },
+    "TestVisualStudio": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "TestVisualStudio"
+      },
+      "dotnetRunMessages": true
+    },
+    "Develop": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    },
+    "Test": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Test"
+      },
+      "dotnetRunMessages": true
+    },
+    "Demo": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Demo"
+      },
+      "dotnetRunMessages": true
+    },
+    "Production": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Production"
+      },
+      "dotnetRunMessages": true
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

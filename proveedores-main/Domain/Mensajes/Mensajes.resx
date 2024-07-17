@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ProcesoActivacionCompletado" xml:space="preserve">
+    <value>El proveedor se activó correctamente!</value>
+    <comment>El proveedor se activó correctamente!</comment>
+  </data>
+  <data name="ProcesoActivacionError_1" xml:space="preserve">
+    <value>Hubo un error al tratar de activar el proveedor {0}  con el receptor {1} por favor validar que sean identificadores válidos.</value>
+    <comment>Hubo un error al tratar de activar el proveedor {0}  con el receptor {1} por favor validar que sean identificadores válidos.</comment>
+  </data>
+  <data name="ProcesoActivacionLog_2" xml:space="preserve">
+    <value>Antes de ejecutar Store procedure de activación de proveedores.</value>
+    <comment>Antes de ejecutar Store procedure de activación de proveedores.</comment>
+  </data>
+  <data name="ProcesoActivacionProveedores" xml:space="preserve">
+    <value>Activar proveedores</value>
+    <comment>Activar proveedores</comment>
+  </data>
+  <data name="ProcesoActivacionProveedoresLog_1" xml:space="preserve">
+    <value>Antes de iniciar proceso de activación de proveedores.</value>
+    <comment>Antes de iniciar proceso de activación de proveedores.</comment>
+  </data>
+  <data name="ProcesoPaginacion" xml:space="preserve">
+    <value>Proceso de paginación.</value>
+    <comment>Proceso depaginación.</comment>
+  </data>
+  <data name="ProcesoPaginacionCompletado" xml:space="preserve">
+    <value>La consulta fue exitosa se recuperaron {0} de registros de {1}.</value>
+    <comment>La consulta fue exitosa se recuperaron {0} de registros de {1}.</comment>
+  </data>
+  <data name="ProcesoPaginacionLog_1" xml:space="preserve">
+    <value>Antes de retornar respuesta, total registros a devolver {0}</value>
+    <comment>Antes de retornar respuesta, total registros a devolver {0}</comment>
+  </data>
+  <data name="ProcesoPaginacionLog_2" xml:space="preserve">
+    <value>Antes de consultar proveedores para el usuario {0}</value>
+    <comment>Antes de consultar proveedores para el usuario {0}</comment>
+  </data>
+  <data name="ProcesoPaginacionLog_3" xml:space="preserve">
+    <value>Despues de consultar proveedores, registros obtenidos {0}</value>
+    <comment>Despues de consultar proveedores, registros obtenidos {0}</comment>
+  </data>
+  <data name="ProcesoPaginaciónError_1" xml:space="preserve">
+    <value>El resultado de la consulta es null.</value>
+    <comment>El resultado de la consulta fue null.</comment>
+  </data>
+  <data name="ProcesoPaginaciónError_2" xml:space="preserve">
+    <value>La consulta no arrojo resultados.</value>
+    <comment>La consulta no arrojo resultados.</comment>
+  </data>
+  <data name="ProcesoPaginaciónError_3" xml:space="preserve">
+    <value>Error en la ejecución, Error: {0}</value>
+    <comment>Error en la ejecución, Error: {0}</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores" xml:space="preserve">
+    <value>Vincular usuarios y proveedores.</value>
+    <comment>Vincular usuarios y proveedores.</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log1" xml:space="preserve">
+    <value>Antes de ejecutar la relación en la base de datos.</value>
+    <comment>Antes de ejecutar la relación en la base de datos.</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log2" xml:space="preserve">
+    <value>Error en la asociación de proveedores error: {1}</value>
+    <comment>Error en la asociación de proveedores error: {1}</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log3" xml:space="preserve">
+    <value>Despues de ejecutar la consulta en la base de datos, codigo de resultado = {0}.</value>
+    <comment>Despues de ejecutar la consulta en la base de datos, codigo de resultado = {0}.</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log4" xml:space="preserve">
+    <value>Antes de ejecutar SP assign_providers_to_users.</value>
+    <comment>Antes de ejecutar SP assign_providers_to_users.</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log5" xml:space="preserve">
+    <value>Total provedores a asociar {0}.</value>
+    <comment>Total provedores a asociar {0}.</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log6" xml:space="preserve">
+    <value>Despues de ejecutar la consulta en la base de datos, resultado = {0}. </value>
+    <comment>Despues de ejecutar la consulta en la base de datos, resultado = {0}.</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log7" xml:space="preserve">
+    <value>Algunas relaciones no se ejecutaron, debido a que los identificadores de los proveedores no son correctos.</value>
+    <comment>Algunas relaciones no se ejecutaron, debido a que los identificadores de los proveedores no son correctos.</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log8" xml:space="preserve">
+    <value>La ejecución no arrojó resultados.</value>
+    <comment>La ejecución no arrojó resultados.</comment>
+  </data>
+  <data name="ProcesoVincularUsuariosProveedores_log9" xml:space="preserve">
+    <value>Error en la asociación de usuarios y proveedores.</value>
+    <comment>Error en la asociación de usuarios y proveedores.</comment>
+  </data>
+</root>

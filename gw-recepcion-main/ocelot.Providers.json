@@ -1,0 +1,30 @@
+﻿{
+  "Routes": [
+    //*********** Metodos de consulta, Proveedores ***********//
+    {
+      "DownstreamPathTemplate": "/api/proveedores/{path}", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reception-providers-api.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/api/proveedores/{path}", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Post" ] //Tipo de Metodo
+    },
+    //*********** Metodos de consulta, HealthChecks ***********//
+    {
+      "DownstreamPathTemplate": "/hc", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reception-providers-api.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/reception-providers-api/hc", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Get" ] //Tipo de Metodo
+    }
+  ]
+}

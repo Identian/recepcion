@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WcfRecepcionSOAP.ReceptorWS" CodeBehind="ReceptorWS.svc.cs" %>

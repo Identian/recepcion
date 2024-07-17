@@ -1,0 +1,8 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7293", //url de launchSettings.json    
+    "Routes": [
+
+    ]
+  }
+}

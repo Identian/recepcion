@@ -1,0 +1,42 @@
+﻿{
+  "Routes": [
+    //*********** Metodos de consulta, Eventos ***********//
+    {
+      "DownstreamPathTemplate": "/api/gestion/documentos/{path}", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reception-events-api.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/api/gestion/documentos/{path}", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Post" ] //Tipo de Metodo
+    },
+    {
+      "DownstreamPathTemplate": "/api/gestion/portal/{path}", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reception-events-api.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/api/gestion/portal/{path}", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Post" ] //Tipo de Metodo
+    },
+    //*********** Metodos de consulta, HealthChecks ***********//
+    {
+      "DownstreamPathTemplate": "/hc", //path del API del proyecto
+      "DownstreamScheme": "http", //Protocolo http o https del url del API proyecto
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reception-events-api.{Namespace}", //Url del proyecto API a consumir
+          "Port": 80 //Puerto del API
+        }
+      ],
+      "UpstreamPathTemplate": "/reception-events-api/hc", //path de como declaras en api en el Gateway, puede ser el mismo o disfrazarlo
+      "UpstreamHttpMethod": [ "Get" ] //Tipo de Metodo
+    }
+  ]
+}
